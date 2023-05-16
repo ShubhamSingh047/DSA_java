@@ -18,7 +18,7 @@ public class Hashing {
         System.out.println(hm.containsKey("India"));
 
         //remove Operation
-        System.out.println(hm.remove("China"));
+//        System.out.println(hm.remove("China"));
 
         //Size of Hashmap
         System.out.println(hm.size());
@@ -27,6 +27,9 @@ public class Hashing {
         System.out.println(hm.isEmpty());
 
         //Clear our hashmap / delete
-        hm.clear();
+//        hm.clear();
+        for(String key: hm.keySet()){
+            System.out.print(key+" :- "+hm.get(key)+" ");
+        }
     }
 }
