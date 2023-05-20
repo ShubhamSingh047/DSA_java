@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class IntersectionTwoArr {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,1};
-        int arr2[]={1,2,3,1};
+        int arr2[]={1,2,3,1,1};
 
         HashSet<Integer> set1 = new HashSet<>();
         HashSet<Integer> set2=new HashSet<>();
