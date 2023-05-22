@@ -47,6 +47,24 @@ class TwoStacks{
         }
     }
 
+    void size(){
+        int sum=0;
+        for(int i=top1; i>=0; i--){
+            sum++;
+        }
+        for(int i=cap-1; i>=top2; i--){
+            sum++;
+        }
+        System.out.println(sum);
+    }
+
+    boolean isEmpty(){
+        if(top1==-1 && top2==cap){
+            return true;
+        }
+        return false;
+    }
+
     public String toString(){
         StringBuilder s = new StringBuilder();
         s.append('[');
@@ -74,10 +92,18 @@ public class EfficientTwoStack {
         s.push1(20);
         s.push1(30);
 
-        s.push1(50);
         s.push2(60);
         s.push2(70);
-        s.push1(80);
+        s.push2(80);
+
+        s.pop1();
+        s.pop1();
+        s.pop1();
+
+        s.pop2();
+        s.pop2();
+        s.pop2();
         System.out.println(s);
+        System.out.println(s.isEmpty());
     }
 }
