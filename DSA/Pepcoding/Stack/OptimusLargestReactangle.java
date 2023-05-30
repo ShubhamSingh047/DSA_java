@@ -18,6 +18,7 @@ public class OptimusLargestReactangle {
             }
             st.push(i);
         }
+//        this for elemnets hwich do not have next smaller
         while(!st.isEmpty()){
             int top=st.pop();
             int curr= arr[top]*(st.isEmpty()?n:n-st.peek()-1);
